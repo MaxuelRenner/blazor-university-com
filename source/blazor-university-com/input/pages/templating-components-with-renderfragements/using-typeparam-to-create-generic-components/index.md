@@ -91,7 +91,7 @@ The final `DataList.razor` component mark-up will look like this.
 - **Line 1**  
     Specifies this component is generic and has a single generic parameter named `TItem`.
 - **Lines 10-11**  
-    Declares a `[Parameter]` property named **Data** that is an enumerable property of type `ITem`.
+    Declares a `[Parameter]` property named **Data** that is an enumerable property of type `TItem`.
 - **Lines 13-14**  
     Declares a `[Parameter]` property named **ChildContent** that is a `RenderFragment<TItem>` -
     so we can pass an instance of `TItem` to it and have it give us some rendered HTML to output.
